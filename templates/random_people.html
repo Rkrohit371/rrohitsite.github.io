@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/random_people.css') }}">
+    <title>Random People | Wealth</title>
+</head>
+<body>
+    <h1>Random People And Their Wealth</h1>
+
+    <div class="container">
+        <aside>
+            <button id="add-user">Add User 🧑</button>
+            <button id="double">Double Money 2x💲</button>
+            <button id="show-millionair">Show Only Millionairs 💰</button>
+            <button id="sort">Sort By Richest 💲💲💰</button>
+            <button id="calculate-wealth">Calculate Entire Wealth 💲+💲</button>
+        </aside>
+
+        <main id="main">
+            <h2><strong>Person</strong> Wealth</h2>
+        </main>
+    </div>
+    <script src="{{url_for('static', filename='javascript/random_people.js')}}"></script>
+</body>
+</html>

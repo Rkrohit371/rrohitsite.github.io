@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Rohit Kumar</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/Rrohit.jpg') }}">
+        </div>
+        <ul>
+            <li><a href="{{ url_for('index')}}">Home</a></li>
+            <li><a href="{{ url_for('home') }}">My Projects</a></li>
+            <li><a href="https://www.linkedin.com/in/rohit-kumar-gond-9a8018169/">Linkedin</a></li>
+            <li><a href="https://github.com/Rkrohit371">Github</a></li>
+            <!-- <li><a href="#">About</a></li> -->
+        </ul>
+    </nav>
+    
+    <header>
+        <button id="toggle" class="toggle">
+            <i class="fa fa-bars fa-2x"></i>
+        </button>
+        <h1>Rohit Kumar</h1>
+        <p>B Tech, Computer Science Engineer, IIT Patna</p>
+
+        <!-- <button class="cta-btn" id="open">Sign Up</button> -->
+    </header>
+
+    <div class="container">
+        <h1>About Me</h1>
+        <p>
+            Hi,<br>
+            I'm Rohit Gond. Engineer-Data Scientist with 1+ year of hands-on experience in ADAS domain and Computer Vision. My work includes building AI/DL/ML models to solve computer vision problems, image preprocessing, data preprocessing. Strong engineering professional with a BTech - Bachelor of Technology focused in CSE from Indian Institute of Technology, Patna.
+
+            
+
+        </p>
+
+        <p>
+            Programming languages - Python, C, C++, Elementary JavaScript
+            Database - SQL
+            Tools and Technologies - Pytorch, Tensorflow, Keras, OpenCV, Docker, PySpark, Pandas, Matplotlib, Seaborn, Numpy, Scikit-Learn, Django, Flask, HTML, CSS, Open3d Library, Ubuntu, Jupyter Notebook, Visual Studio Code
+        </p>
+
+        <h1>Projects</h1>
+        <ul>
+            <li><h3>Django Projects</h3></li>
+            <p>
+                My Profile Site: http://myprofilesite.herokuapp.com/ <br>
+                This is my resume website with email functionality. It has links to my GitHub, LinkedIn page. It has blog functionally. I can edit and update the blog.
+
+            </p>
+            <p>
+                Paragraph Analyser: http://wordspam.herokuapp.com/ <br>
+                This website has two functionally. It takes sentences or paragraph as input and tell us whether the given input as a spam or not spam. It also counts the numbers of words presents in the paragraph. I also count the frequency of each word.
+            </p>
+            <li><h3>Flask Project</h3></li>
+            <p>In this project I have combined all the mini-web-app that I have built so far with my resume as the main page using Flask. Currently, this project contains 15 web apps with my resume. Some of the web app are Expense Tracker, Hangman Game, Typing Game, Relax App, The Breakout Game, Lyrics Search and much more.</p>
+            <li><h3>Dermatologist-level classification of eye images with Convolutional Neural Network</h3></li>
+            <p>I have worked on Diabetic Retinopathy image classification project. In this I have worked on classifying eye images into five levels which are 0 - No DR,1 - Mild, 2 - Moderate,3 - Severe,4 - Proliferative DR
+            I have tried my own cnn network and some built-in networks like VGG and Resnet.
+
+            </p>
+        </ul>
+
+        <h1>Certification Courses</h1>
+        <ul>
+            <li> Advanced Web Scraping with Python using Scrapy & Splash</li>
+            <li> Python, JS, & React | Build a Blockchain & Cryptocurrency from Udemy</li>
+            <li> 20 Web Projects With Vanilla Javascript from Udemy</li>
+            <li> Python and Flask Bootcamp: Create Websites using Flask! from Udemy</li>
+            <li> The Python Mega Course: Build 10 Real World Application from Udemy</li>
+            <li> Django 2.2 & Python | The Ultimate Web Development Bootcamp from Udemy</li>
+            <li> Django Masterclass: Build Web Apps With Python & Django from Udemy</li>
+            <li> Building Machine Learning Web Apps with Python from Udemy</li>
+            <li> Complete Tensorflow 2 and Keras Deep Learning Bootcamp from Udemy</li>
+            <li> NLP - Natural Language Processing with Python from Udemy</li>
+            <li> Machine Learning Practical Workout | 8 Real World Projects from Udemy</li>
+            <li> Pytorch for Deep Learning With Python Bootcamp from Udemy</li>
+            <li> Python for Data Science and Machine Learning Bootcamp from Udemy</li>
+            <li> Machine Learning from Coursera</li>
+            <li> Algorithmic Toolbox from Coursera</li>
+            <li> Internet of Things and Machine Learning from Bolt IoT</li>
+        </ul>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal-container" id="modal">
+        <div class="modal">
+            <button class="close-btn" id="close">
+                <i class="fa fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <h3>Sign Up</h3>
+            </div>
+            <div class="modal-content">
+                <p>Register with us for future updates</p>
+                <form class="modal-form">
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Enter Name" class="form-input">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter email" class="form-input">
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter password" class="form-input">
+                    </div>
+                    <div>
+                        <label for="password2">Conform Password</label>
+                        <input type="password" id="password2" placeholder="Conform Password" class="form-input">
+                    </div>
+                    <input type="submit" value="submit" class="submit-btn">
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer 
+        style="background-color: rgb(63, 61, 61); 
+                color: white; 
+                text-align: center;
+                padding: 10px;
+    ">©Rohit Gond, 2022-23</footer>
+    <footer style="background-color: rgb(63, 61, 61);"></footer>
+    <script src="{{url_for('static', filename='javascript/script.js')}}"></script>
+</body>
+</html>

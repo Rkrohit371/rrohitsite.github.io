@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=4, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/relax.css') }}">
+    <title>Rrohit Site</title>
+</head>
+<body>
+    <h1>Relaxer</h1>
+
+    <div id="container" class="container">
+        <div class="circle"></div>
+        <p id="test"></p>
+
+        <div class="pointer-container">
+            <span class="pointer"></span>
+        </div>
+
+        <div class="gradient-circle"></div>
+    </div>
+    
+
+    <script src="{{url_for('static', filename='javascript/relax.js')}}"></script>
+</body>
+</html>

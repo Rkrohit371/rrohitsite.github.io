@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/hangman_game.css') }}">
+    <title>Hangman Game</title>
+</head>
+<body>
+    <h1>Hangman Game</h1>
+    <p>Find the hidden word | Enter a letter _</p>
+    <div class="game-container">
+        <svg height="450" width="300" class="figure-container">
+            <!-- Rod Building -->
+            <line x1="70" y1="30" x2="150" y2="30" />
+            <line x1="150" y1="30" x2="150" y2="70" />
+            <line x1="70" y1="30" x2="70" y2="250" />
+            <line x1="40" y1="250" x2="100" y2="250" />
+            <!-- Head Building -->
+            <circle cx="150" cy="100" r="26" class="figure-part" />
+            <!-- Body -->
+            <line x1="150" y1="126" x2="150" y2="190" class="figure-part" /> 
+            <!-- Arm -->
+            <line x1="150" y1="160" x2="120" y2="130" class="figure-part" /> 
+            <line x1="150" y1="160" x2="180" y2="130" class="figure-part" />
+            <!-- Legs -->
+            <line x1="150" y1="190" x2="180" y2="220" class="figure-part" /> 
+            <line x1="150" y1="190" x2="120" y2="220" class="figure-part" />
+        </svg>
+
+        <div class="wrong-letter-container">
+            <div id="wrong-letters">
+            </div>
+        </div>
+
+        <div class="word" id="word">
+        </div>
+    </div>
+
+    <!-- Container for final messages -->
+    <div class="popup-container" id="popup">
+        <div class="popup">
+            <h2 id="final-message"></h2>
+            <button id="play-button" class="play">Play Again</button>
+        </div>
+    </div>
+    
+    <!-- Notification -->
+    <div class="notification-container" id="notification-container">You have already entered this letter!!</div>
+    
+    <script src="{{url_for('static', filename='javascript/hangman_game.js')}}"></script>
+</body>
+</html>

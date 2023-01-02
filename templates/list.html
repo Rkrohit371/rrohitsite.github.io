@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/list.css') }}">
+    <title>Rrohit Site</title>
+    <script src="https://kit.fontawesome.com/f20e7bcdc4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Top 10 Programming Languages</h1>
+    <p class="rule">Drag and drop the items into their corresponding spots.</p>
+    <ul id="draggable-list" class="draggable-list"></ul>
+    <button class="check-btn" id="check">
+        Check Order <i class="fas fa-paper-plane"></i> 
+    </button>
+    
+
+
+    <script src="{{url_for('static', filename='javascript/list.js')}}"></script>
+</body>
+</html>

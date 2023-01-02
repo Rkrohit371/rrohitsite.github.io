@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+    <title>Rrohit Site</title>
+</head>
+<body>
+    <div class="home">
+        <a href="{{ url_for('index')}}"><h3>Home</h3></a>
+    </div>
+    <div class="projects">
+        <h1>My Projects</h1>
+    </div>
+
+    <div class="container">
+        
+        <a href="{{url_for('expense')}}"><h2>Expense Tracker</h2></a>
+        <a href="{{url_for('hangman')}}"><h2>The Hangman Game</h2></a>
+        <a href="{{url_for('random')}}"><h2>Random People</h2></a>
+        <a href="{{url_for('meal')}}"><h2>The Meal Finder</h2></a>
+        <a href="{{url_for('exchange')}}"><h2>Exchange Rate Calculator</h2></a>
+
+
+
+
+        <a href="{{url_for('typing')}}"><h2>Typing Game</h2></a>
+        <a href="{{url_for('speech')}}"><h2>Speech Text Reader</h2></a>
+        <a href="{{url_for('list')}}"><h2>Sort The List</h2></a>
+        <a href="{{url_for('relax')}}"><h2>Relax App</h2></a>
+        <a href="{{url_for('guess')}}"><h2>Number Guessaing Game</h2></a>
+
+
+
+        <a href="{{url_for('newyear')}}"><h2>New Year Countdown</h2></a>
+        <a href="{{url_for('lyrics')}}"><h2>Lyrics Search App</h2></a>
+        <a href="{{url_for('memory')}}"><h2>Flip Cards</h2></a>
+        <a href="{{url_for('breakout')}}"><h2>The Breakout Game</h2></a>
+        <a href="{{url_for('blog_loader')}}"><h2>Infinite Quotes Scroller</h2></a>
+        <!-- <a href="{{url_for('exchange')}}"><h2>Virtual Movies Theatre Module</h2></a> -->
+
+    </div>
+
+</body>
+</html>
